@@ -23,6 +23,13 @@ export class TestData {
       firstName: 'Ilya',
       lastName: 'Belov',
       right: TestData.rights[1]
+    },
+    {
+      id: 2,
+      userName: 'bob',
+      firstName: 'bob',
+      lastName: 'bob',
+      right: TestData.rights[2]
     }
   ];
 
