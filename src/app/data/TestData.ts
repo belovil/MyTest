@@ -5,10 +5,10 @@ import {User} from '../model/User';
 export class TestData {
 
   static modules: Module[] = [
-    {id: 1, title: 'Firewall'},
-    {id: 2, title: 'Loadbalancer'},
-    {id: 3, title: 'Storage and Backup'},
-    {id: 4, title: 'Idaas'}
+    {id: 1, title: 'Firewall', icon: 'local_fire_department'},
+    {id: 2, title: 'Loadbalancer', icon: 'storage'},
+    {id: 3, title: 'Storage and Backup', icon: 'dns'},
+    {id: 4, title: 'Idaas', icon: 'supervisor_account'}
   ];
 
   static rights: Right[] = [
