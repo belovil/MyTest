@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {DataHandlerService} from '../../service/data-handler.service';
+import {Module} from '../../model/module';
 
 @Component({
   selector: 'app-modules',
@@ -7,10 +9,16 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ModulesComponent implements OnInit {
 
-  constructor() {
+  modules: Module[];
+
+  constructor(private dataHandler: DataHandlerService) {
   }
 
-  ngOnInit(): void {
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+    this.modules = this.dataHandler.getModules();
+    console.log(this.modules);
+    console.log(1);
   }
 
 }

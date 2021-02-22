@@ -12,12 +12,18 @@ import {NavComponent} from './nav/nav.component';
 import {LayoutModule} from '@angular/cdk/layout';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {RouterModule} from '@angular/router';
+import {HomeComponent} from './home/home.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatMenuModule} from '@angular/material/menu';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModulesComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,11 @@ import {MatListModule} from '@angular/material/list';
     MatCardModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    RouterModule,
+    MatGridListModule,
+    MatMenuModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
