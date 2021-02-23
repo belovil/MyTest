@@ -17,8 +17,6 @@ export class ModulesComponent implements OnInit {
   // tslint:disable-next-line:typedef
   ngOnInit() {
     this.modules = this.dataHandler.getModules();
-    console.log(this.modules);
-    console.log(1);
   }
 
 }

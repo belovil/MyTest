@@ -17,13 +17,15 @@ import {HomeComponent} from './home/home.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
 import {AppRoutingModule} from './app-routing.module';
+import {ApplicationsComponent} from './views/applications/applications.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModulesComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ApplicationsComponent
   ],
   imports: [
     BrowserModule,

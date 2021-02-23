@@ -11,10 +11,10 @@
 }
 
 .dashboard-icon {
-  background: #e200740f;
+  background: #3f51b514;
   border-radius: 50%;
   padding: 10px;
-  color: #e20074;
+  /*color: #e20074;*/
 }
 
 .more-button {
@@ -24,5 +24,17 @@
 }
 
 .dashboard-card-content {
-  text-align: center;
+  /*text-align: center;*/
+}
+
+.module-actions {
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  left: 28px;
+  right: 15px;
+}
+
+.spacer {
+  flex-grow: 1;
 }
