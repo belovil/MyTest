@@ -1,3 +1,8 @@
-<mat-list *ngFor="let application of applications">
-  <mat-list-item> {{application.name}} </mat-list-item>
-</mat-list>
+<mat-nav-list>
+  <a *ngFor="let application of applications" mat-list-item>
+    <mat-icon color="primary" matListIcon>view_in_ar</mat-icon>
+    <h3 mat-line>{{application.name}} </h3>
+    <mat-divider *ngIf="!last" [inset]="true"></mat-divider>
+  </a>
+  <!--  <mat-divider></mat-divider>-->
+</mat-nav-list>
